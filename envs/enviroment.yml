@@ -1,5 +1,5 @@
 # for basic scRNAseq analyses that don't require gpu:
-name: hlca2
+name: hlca
 
 dependencies:
  - python=3.12 #before was 3.7
@@ -7,6 +7,8 @@ dependencies:
  - pip:
    - jupyterlab
    - scanpy==1.10.4 #==1.9
+   - scvi-tools
+   - scikit-misc
    - umap-learn>=0.5
    - pynndescent
    #- nb-black # for pretty code formatting

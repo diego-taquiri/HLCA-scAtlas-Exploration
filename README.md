@@ -30,6 +30,8 @@ To better understand the differences among the 13 datasets in the core HLCA, we 
 
 ![Dataset Statistics](./figures/qc_plot.png)
 
+![Dataset Statistics](./figures/highly_variable_genes_top4000.png)
+
 ---
 
 ## Contributions and Learning Goals
