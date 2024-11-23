@@ -28,6 +28,8 @@ To better understand the differences among the 13 datasets in the core HLCA, we 
 
 ![Dataset Statistics](./figures/datasets_statistics.png)
 
+![Dataset Statistics](./figures/qc_plot.png)
+
 ---
 
 ## Contributions and Learning Goals
