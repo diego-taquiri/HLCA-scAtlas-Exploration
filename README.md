@@ -16,6 +16,8 @@ In this repository, we focus on understanding and reproducing the integration pr
 
 ![Dataset Statistics](./figures/integration-before-after.png)
 
+![Dataset Statistics](./figures/atlas-clustering.png)
+
 To better understand the differences among the 13 datasets in the core HLCA, we have conducted several analyses. First, we analyzed the number of donors per study and the total cells per study, which revealed substantial variability in sample sizes across studies. Next, we examined the total counts per study, the total counts per donor within a single study, and the total counts per cell in a single donor. These metrics demonstrated significant differences in library size, not only across datasets but also within individual datasets. Additionally, we observed the effects of different sequencing chemistries, such as 10X Genomics v2 vs. v3, within the same study. These differences in cell numbers and counts highlighted the challenges in normalizing and correcting for library size variations.
 
 ---
