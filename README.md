@@ -7,21 +7,23 @@ In this repository, we focus on understanding and reproducing the integration pr
 
 ## Current Explorations
 
+![Dataset Statistics](./figures/integration-before-after.png)
+
+**Figure 1. Batch effect correction with SCVI aligns cell types across datasets.** The left panel shows a UMAP of 13 single-cell RNA sequencing datasets before batch effect correction, where cells are grouped by dataset (batch) rather than cell type, revealing significant batch effects. The right panel shows the same data after scvi-based integration, where cells cluster by cell type, with minimal influence from dataset-specific batch effects.
+
+
+![Dataset Statistics](./figures/atlas-clustering.png)
+**Figure 2. Human Lung Cell Atlas clustering and annotation.**  The left panel shows the complete Human Lung Cell Atlas core annotated with level 1 categories. The right panel focuses on the immune subset of the atlas, after nested clustering, annotated with level 4 categories, including CD8 T-cells, CD4 T-cells, and NK cells. 
 
 ![Dataset Statistics](./figures/datasets_statistics.png)
+**Figure 3.** Dataset variability in the HLCA core. Analysis of 13 datasets revealed substantial differences in sample sizes, library counts, and sequencing chemistries (e.g., 10X Genomics v2 vs. v3). These variations highlight challenges in normalizing and correcting for library size differences.
+
 
 ![Dataset Statistics](./figures/qc_plot.png)
 
 ![Dataset Statistics](./figures/highly_variable_genes_top4000.png)
 
-![Dataset Statistics](./figures/integration-before-after.png)
-
-![Dataset Statistics](./figures/atlas-clustering.png)
-
-To better understand the differences among the 13 datasets in the core HLCA, we have conducted several analyses. First, we analyzed the number of donors per study and the total cells per study, which revealed substantial variability in sample sizes across studies. Next, we examined the total counts per study, the total counts per donor within a single study, and the total counts per cell in a single donor. These metrics demonstrated significant differences in library size, not only across datasets but also within individual datasets. Additionally, we observed the effects of different sequencing chemistries, such as 10X Genomics v2 vs. v3, within the same study. These differences in cell numbers and counts highlighted the challenges in normalizing and correcting for library size variations.
-
----
-
+**Figure 4.** Quality control and selection of highly variable genes.
 
 ---
 
