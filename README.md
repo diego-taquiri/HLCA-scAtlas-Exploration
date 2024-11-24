@@ -4,6 +4,23 @@ This project is an in-depth exploration of the integration of multiple single-ce
 
 In this repository, we focus on understanding and reproducing the integration process of the core HLCA dataset, which comprises 13 datasets of healthy lung scRNA-seq studies. This exploration emphasizes how different decisions in preprocessing, normalization, batch-effect correction, clustering, and annotation affect the resulting integrated dataset.
 
+
+## Current Explorations
+
+
+![Dataset Statistics](./figures/datasets_statistics.png)
+
+![Dataset Statistics](./figures/qc_plot.png)
+
+![Dataset Statistics](./figures/highly_variable_genes_top4000.png)
+
+![Dataset Statistics](./figures/integration-before-after.png)
+
+To better understand the differences among the 13 datasets in the core HLCA, we have conducted several analyses. First, we analyzed the number of donors per study and the total cells per study, which revealed substantial variability in sample sizes across studies. Next, we examined the total counts per study, the total counts per donor within a single study, and the total counts per cell in a single donor. These metrics demonstrated significant differences in library size, not only across datasets but also within individual datasets. Additionally, we observed the effects of different sequencing chemistries, such as 10X Genomics v2 vs. v3, within the same study. These differences in cell numbers and counts highlighted the challenges in normalizing and correcting for library size variations.
+
+---
+
+
 ---
 
 ## Methodology
@@ -19,18 +36,6 @@ This project is a work in progress, and the current focus is on:
 - **Reproducing** the construction of the core HLCA dataset.
 - **Implementing** initial comparisons of normalization, batch-effect correction, and clustering results.
 - **Expanding** the analysis to explore more recent integration or interpretability techniques.
-
----
-
-## Current Explorations
-
-To better understand the differences among the 13 datasets in the core HLCA, we have conducted several analyses. First, we analyzed the number of donors per study and the total cells per study, which revealed substantial variability in sample sizes across studies. Next, we examined the total counts per study, the total counts per donor within a single study, and the total counts per cell in a single donor. These metrics demonstrated significant differences in library size, not only across datasets but also within individual datasets. Additionally, we observed the effects of different sequencing chemistries, such as 10X Genomics v2 vs. v3, within the same study. These differences in cell numbers and counts highlighted the challenges in normalizing and correcting for library size variations.
-
-![Dataset Statistics](./figures/datasets_statistics.png)
-
-![Dataset Statistics](./figures/qc_plot.png)
-
-![Dataset Statistics](./figures/highly_variable_genes_top4000.png)
 
 ---
 
